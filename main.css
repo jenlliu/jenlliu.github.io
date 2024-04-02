@@ -19,8 +19,8 @@
 }
 
 .nav1 {
-  grid-column: auto / span 5;
-  grid-row: auto / span 5;
+  grid-column: auto/span 5;
+  grid-row: auto/span 5;
 }
 
 .nav2, 
