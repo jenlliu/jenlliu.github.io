@@ -11,7 +11,7 @@
 
 .navigation {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   width: 98vw;
   margin-left:auto;
   margin-right: auto;
@@ -19,8 +19,8 @@
 }
 
 .nav1 {
-  grid-column: auto/span 5;
-  grid-row: auto/span 5;
+  grid-column: auto/span 4;
+  grid-row: auto/span 4;
 }
 
 .nav2, 
