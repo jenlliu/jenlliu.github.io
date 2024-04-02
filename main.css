@@ -1,5 +1,12 @@
+.sticky {
+  position: sticky;
+  top: 0;
+  padding-top: 1%;
+  z-index: 1;
+}
+
 .start {
-  height: 100vh;
+  height: 88vh;
 }
 
 .navigation {
@@ -8,13 +15,12 @@
   width: 98vw;
   margin-left:auto;
   margin-right: auto;
-  margin-top: 0.7%;
   font-family: 'Helvetica';
 }
 
 .nav1 {
-  grid-column: auto / span 4;
-  grid-row: auto / span 4;
+  grid-column: auto / span 5;
+  grid-row: auto / span 5;
 }
 
 .nav2, .nav3, .nav4, .nav5 {
@@ -109,6 +115,7 @@ svg {
 .selected {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .images {
@@ -117,8 +124,8 @@ svg {
 }
 
 .works {
-  width: 29.5vw;
-  padding: 15px;
+  width: 27.5vw;
+  padding: 30px;
 }
 
 .grid1, .grid2, .grid3 {
