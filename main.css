@@ -129,6 +129,7 @@ svg {
 .works {
   width: 27.5vw;
   padding: 30px;
+  opacity: 0;
 }
 
 .grid1, .grid2, .grid3 {
