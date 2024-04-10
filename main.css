@@ -128,8 +128,16 @@ svg {
 
 .works {
   width: 27.5vw;
-  padding: 30px;
+  padding-top: 55px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 5px;
   opacity: 0;
+}
+
+.concept {
+  padding-left: 30px;
+  font-family: 'Helvetica';
 }
 
 .grid1, .grid2, .grid3 {

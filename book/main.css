@@ -1,0 +1,38 @@
+.sticky {
+  position: sticky;
+  top: 0;
+  padding-top: 1%;
+  z-index: 1;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 98vw;
+  margin-left:auto;
+  margin-right: auto;
+  font-family: 'Helvetica';
+}
+
+.nav1 {
+  grid-column: auto/span 3;
+  grid-row: auto/span 3;
+}
+
+.nav2, 
+.nav3, 
+.nav4, 
+.nav5 {
+  margin-left: auto;
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
