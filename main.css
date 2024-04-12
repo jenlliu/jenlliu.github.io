@@ -144,6 +144,10 @@ a:hover {
   rotate: -20deg;
 }
 
+.img{
+  display: none;
+}
+
 @media only screen and (max-width: 1200px){
   #lana {
   width: 210px;
@@ -227,13 +231,6 @@ a:hover {
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(250,190,219,1) 5%, rgba(252,131,190,1) 100%);
   }
 
-  .img{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .navigation{
     font-size: 17px;
     grid-template-columns: repeat(4, 1fr);
@@ -247,6 +244,18 @@ a:hover {
     margin-bottom: 10%;
   }
 
+  .laptop {
+    display: none;
+  }
+
+  .img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
   .works{
     position: relative;
   }
@@ -255,17 +264,17 @@ a:hover {
     box-shadow: none;
   }
 
-  #lana,
-  #bushwick,
-  #hrot,
-  #mercury,
-  #mia,
-  #sunday,
-  #weyes,
-  #inhaler,
-  #zine,
-  #home,
-  #analise {
+  #lana2,
+  #bushwick2,
+  #hrot2,
+  #mercury2,
+  #mia2,
+  #sunday2,
+  #weyes2,
+  #inhaler2,
+  #zine2,
+  #home2,
+  #analise2 {
     width: 95vw;
     left: 0;
     top: 0;
