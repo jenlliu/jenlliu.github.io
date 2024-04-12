@@ -1,5 +1,7 @@
 $(document).ready(function() {
-      $(".works").draggable();
+      $(".works").draggable({
+        containment: "window"
+      });
     });
 
 
