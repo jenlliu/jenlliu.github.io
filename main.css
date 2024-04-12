@@ -79,72 +79,73 @@ a:hover {
 }
 
 #lana {
-  width: 300px;
+  width: 290px;
   left: 30%;
   rotate: 10deg;
+  top: 35%;
 }
 
 #bushwick {
-  width: 300px;
+  width: 290px;
   left: 40%;
   top: 53%;
 }
 
 #hrot {
-  width: 280px;
+  width: 270px;
   left: 61%;
   top: 54%;
 }
 
 #mercury {
-  width: 250px;
+  width: 240px;
   left: 55%;
   rotate: -15deg;
   top: 32%;
 }
 
 #mia {
-  width: 230px;
+  width: 220px;
   left: 19%;
   top: 37%;
   rotate: 3deg;
 }
 
 #sunday {
-  width: 250px;
+  width: 240px;
   left: 25%;
   rotate: -15deg;
   top: 53%;
 }
 
 #weyes {
-  width: 210px;
+  width: 200px;
   left: 50%;
   top: 61%;
   rotate: 20deg;
 }
 
 #inhaler {
-  width: 180px;
+  width: 170px;
   left: 33%;
   top: 71%;
   rotate: 10deg;
 }
 
 #zine {
-  width: 230px;
+  width: 220px;
   left: 66%;
   top: 43%;
 }
 
 #home {
-  width: 210px;
-  left: 43%;
+  width: 200px;
+  left: 44%;
   top: 39%;
 }
 
 #analise {
-  width: 230px;
+  width: 220px;
   left: 60%;
   top: 61%;
   rotate: -20deg;
