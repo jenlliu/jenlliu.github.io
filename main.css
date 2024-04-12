@@ -79,41 +79,41 @@ a:hover {
 }
 
 #lana {
-  width: 290px;
-  left: 30%;
+  width: 240px;
+  left: 32%;
   rotate: 10deg;
   top: 35%;
 }
 
 #bushwick {
-  width: 290px;
-  left: 40%;
-  top: 53%;
+  width: 240px;
+  left: 43%;
+  top: 54%;
 }
 
 #hrot {
   width: 270px;
-  left: 61%;
+  left: 60%;
   top: 54%;
 }
 
 #mercury {
-  width: 240px;
+  width: 220px;
   left: 55%;
   rotate: -15deg;
-  top: 32%;
+  top: 34%;
 }
 
 #mia {
   width: 220px;
-  left: 19%;
+  left: 21%;
   top: 37%;
   rotate: 3deg;
 }
 
 #sunday {
   width: 240px;
-  left: 25%;
+  left: 30%;
   rotate: -15deg;
   top: 53%;
 }
@@ -122,12 +122,12 @@ a:hover {
   width: 200px;
   left: 50%;
   top: 61%;
-  rotate: 20deg;
+  rotate: 15deg;
 }
 
 #inhaler {
   width: 170px;
-  left: 33%;
+  left: 36%;
   top: 71%;
   rotate: 10deg;
 }
@@ -141,14 +141,14 @@ a:hover {
 #home {
   width: 200px;
   left: 44%;
-  top: 39%;
+  top: 40%;
 }
 
 #analise {
   width: 220px;
   left: 60%;
   top: 61%;
-  rotate: -20deg;
+  rotate: -10deg;
 }
 
 .img{
