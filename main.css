@@ -52,6 +52,8 @@ a:hover {
   text-align: center;
   margin-top: 5%;
   margin-bottom: 2%;
+  z-index: 1;
+  position: relative;
 }
 
 .name {
@@ -63,7 +65,7 @@ a:hover {
 
 .works {
   position: absolute;
-  cursor: grab;
+  cursor: move;
 }
 
 .works:hover {
