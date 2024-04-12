@@ -48,15 +48,15 @@ a:hover {
 }
 
 .title {
-  width: 100vw;
+  width:100vw;
   text-align: center;
+}
+
+.name {
   margin-top: 5%;
   margin-bottom: 2%;
   z-index: 1;
   position: relative;
-}
-
-.name {
   font-family: "sweet-fancy-script", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -65,6 +65,7 @@ a:hover {
     0 0 10px white,
     0 0 30px white,
     0 0 30px white;
+  display: inline-block;
 }
 
 .works {
@@ -80,73 +81,73 @@ a:hover {
 
 #lana {
   width: 240px;
-  left: 32%;
+  left: 17%;
   rotate: 10deg;
-  top: 35%;
+  top: 58%;
 }
 
 #bushwick {
   width: 240px;
-  left: 43%;
-  top: 54%;
+  left: 38%;
+  top: 34%;
 }
 
 #hrot {
   width: 270px;
-  left: 60%;
-  top: 54%;
+  left: 80%;
+  top: 44%;
 }
 
 #mercury {
   width: 220px;
-  left: 55%;
+  left: 70%;
   rotate: -15deg;
-  top: 34%;
+  top: 10%;
 }
 
 #mia {
   width: 220px;
-  left: 21%;
-  top: 37%;
+  left: 15%;
+  top: 8%;
   rotate: 3deg;
 }
 
 #sunday {
   width: 240px;
-  left: 30%;
+  left: 7%;
   rotate: -15deg;
-  top: 53%;
+  top: 45%;
 }
 
 #weyes {
   width: 200px;
-  left: 50%;
-  top: 61%;
-  rotate: 15deg;
+  left: 60%;
+  top: 64%;
+  rotate: 10deg;
 }
 
 #inhaler {
   width: 170px;
-  left: 36%;
-  top: 71%;
+  left: 46%;
+  top: 55%;
   rotate: 10deg;
 }
 
 #zine {
   width: 220px;
-  left: 66%;
-  top: 43%;
+  left: 63%;
+  top: 34%;
 }
 
 #home {
   width: 200px;
-  left: 44%;
-  top: 42%;
+  left: 34%;
+  top: 25%;
 }
 
 #analise {
   width: 220px;
-  left: 60%;
+  left: 76%;
   top: 61%;
   rotate: -10deg;
 }
