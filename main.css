@@ -4,6 +4,7 @@ body {
   background: rgb(255,255,255);
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(250,190,219,1) 15%, rgba(252,131,190,1) 100%);
   overflow: hidden;
+  background-repeat: repeat;
 }
 
 .sticky {
@@ -81,7 +82,7 @@ a:hover {
 
 #lana {
   width: 240px;
-  left: 80%;
+  left: 78%;
   top: 40%;
   rotate: 10deg;
 }
@@ -100,7 +101,7 @@ a:hover {
 
 #mercury {
   width: 220px;
-  left: 73%;
+  left: 71%;
   rotate: -15deg;
   top: 10%;
 }
@@ -135,7 +136,7 @@ a:hover {
 
 #zine {
   width: 220px;
-  left: 66%;
+  left: 64%;
   top: 34%;
 }
 
@@ -156,76 +157,85 @@ a:hover {
   display: none;
 }
 
+.grid {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px){
+  body{
+    overflow: hidden;
+  }
+
   #lana {
-  width: 210px;
-  left: 30%;
+  width: 240px;
+  left: 75%;
+  top: 45%;
   rotate: 10deg;
   }
 
   #bushwick {
-  width: 230px;
+  width: 240px;
   left: 40%;
-  top: 55%;
+  top: 37%;
   }
 
   #hrot {
-  width: 210px;
-  left: 59%;
-  top: 58%;
+  width: 220px;
+  left: 8%;
+  top: 44%;
   }
 
   #mercury {
-  width: 180px;
-  left: 53%;
+  width: 200px;
+  left: 73%;%;
   rotate: -15deg;
-  top: 35%;
+  top: 10%;
   }
 
   #mia {
-  width: 160px;
-  left: 18%;
-  top: 40%;
+  width: 200px;
+  left: 15%;
+  top: 8%;
   rotate: 3deg;
   }
 
   #sunday {
-  width: 180px;
-  left: 25%;
+  width: 210px;
+  left: 17%;
+  top: 59%;
   rotate: -15deg;
-  top: 55%;
   }
 
   #weyes {
-  width: 140px;
+  width: 175px;
   left: 50%;
-  top: 65%;
-  rotate: 20deg;
+  top: 60%;
+  rotate: 8deg;
   }
 
   #inhaler {
-  width: 110px;
-  left: 33%;
-  top: 75%;
+  width: 140px;
+  left: 31%;
+  top: 28%;
   rotate: 10deg;
   }
 
   #zine {
-  width: 160px;
+  width: 190px;
   left: 66%;
-  top: 47%;
+  top: 30%;
   }
 
   #home {
-  width: 140px;
-  left: 43%;
-  top: 43%;
+  width: 170px;
+  left: 56%;
+  top: 50%;
   }
 
   #analise {
-  width: 160px;
-  left: 60%;
-  top: 65%;
+  width: 190px;
+  left: 73%;
+  top: 68%;
   rotate: -20deg;
   }
 }
@@ -234,7 +244,7 @@ a:hover {
   body {
     overflow-y: scroll;
     height: 100%;
-    background-size: fill;
+    background-size: cover;
     background-repeat: no-repeat;
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(250,190,219,1) 5%, rgba(252,131,190,1) 100%);
   }
@@ -256,13 +266,81 @@ a:hover {
     display: none;
   }
 
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 98vw;
+    text-align: center;
+  }
+
+  .works{
+    position: relative;
+  }
+
+  .works:hover {
+    box-shadow: none;
+  }
+
+  #lana2,
+  #bushwick2,
+  #hrot2,
+  #mercury2,
+  #mia2,
+  #sunday2,
+  #weyes2,
+  #inhaler2,
+  #zine2,
+  #home2,
+  #analise2 {
+    width: 45vw;
+    left: 0;
+    top: 0;
+    rotate: 0deg;
+    margin-bottom: 3%;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  body {
+    overflow-y: scroll;
+    height: 100%;
+    background-size: fill;
+    background-repeat: no-repeat;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(250,190,219,1) 5%, rgba(252,131,190,1) 100%);
+  }
+
+  .navigation{
+    font-size: 17px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .nav3 {
+    grid-column-start: 2;
+  }
+
+  .title {
+    margin-top: 2%;
+    margin-bottom: 13%;
+  }
+
+  .name {
+    font-size: 100px;
+  }
+
+  .laptop {
+    display: none;
+  }
+
+  .grid {
+  display: none;
+ }
+
   .img{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
 
   .works{
     position: relative;
