@@ -1,6 +1,6 @@
 body {
-background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 85%, rgba(251,169,220,1) 95%, rgba(254,89,180,1) 100%);
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 85%, rgba(251,169,220,1) 95%, rgba(254,89,180,1) 100%);
   background-repeat: no-repeat;
 }
 
@@ -30,22 +30,13 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 85%, rgba(251,169,220,1) 9
 }
 
 .nav2 {
-  grid-column-start: 4;
+  grid-column-start: 6;
 }
 
 .nav2, 
-.nav3, 
-.nav4, 
-.nav5 {
+.nav3 {
   margin-left: auto;
   text-align: right;
-}
-
-.nav3 {
-  text-shadow: 0 0 10px white,
-    0 0 10px white,
-    0 0 20px white,
-    0 0 20px white;
 }
 
 a {
@@ -60,26 +51,24 @@ a:hover {
     0 0 20px #FE007C;
 }
 
-.main {
-  margin-top: 5%;
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80vw;
+  grid-column-gap: 10%;
+  margin:3% auto 5%;
 }
 
-.works {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 80vw;
-  margin: 0 auto 5%;
+.title,
+.text {
+  font-family: 'Helvetica';
+  font-size: 25px;
+}
+
+.work {
+  text-align: center;
 }
 
 img {
-  width: 350px;
-  margin: 0 auto 4%;
-}
-
-img:hover {
-  background: #FE007C;
-  box-shadow: 0 0 30px #FE007C, 
-    0 0 30px #FE007C;
+  width: 700px;
 }
