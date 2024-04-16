@@ -73,6 +73,10 @@ a:hover {
   margin: 0 auto 5%;
 }
 
+.works a{
+  margin: 0 auto 4%;
+}
+
 img {
   width: 350px;
   margin: 0 auto 4%;
