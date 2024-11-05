@@ -96,11 +96,17 @@ a:hover {
 .list2 {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 5rem;
 	align-items:center;
+	row-gap: 0.5rem;
 }
+
 .listitem{
 	display:flex;
+}
+
+.list2 .listitem:nth-child(3n){
+	margin-right:0px;
+	justify-content:center;
 }
 
 .list2 .listitem:nth-child(3n+1){
@@ -113,7 +119,7 @@ a:hover {
 }
 
 .list2 img {
-	width: 30rem;
+	width: 35rem;
 }
 
 .works2 {
