@@ -139,6 +139,21 @@ a:hover {
 	display: block;
 }
 
+.archivepics {
+	margin-top: 4rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	height: auto;
+	align-items: center;
+	gap: 2rem;
+}
+
+.archivepics img {
+	width: 20rem;
+	height: auto;
+}
+
 .footer {
 	margin-top: 2.5rem;
 	margin-bottom: 1rem;

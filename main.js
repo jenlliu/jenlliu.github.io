@@ -47,6 +47,20 @@ $(document).ready(function() {
         $('.listbutton').addClass('underline');
         $('.gridbutton').removeClass('underline');
     });
+
+    $('.archive').click(function(){
+        $('.list, .list2, .categories, .about').addClass('hidden');
+        $('.archivepics').removeClass('hidden');
+        $('.archive').addClass('underline');
+        $('.work').removeClass('underline');
+    });
+
+    $('.work').click(function(){
+        $('.list, .list2, .categories, .about').removeClass('hidden');
+        $('.archivepics').addClass('hidden');
+        $('.work').addClass('underline');
+        $('.archive').removeClass('underline');
+    });
 });
 
 $(document).ready(function() {
