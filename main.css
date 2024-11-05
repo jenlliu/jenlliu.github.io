@@ -5,7 +5,9 @@
 body {
 	font-family: Helvetica, sans-serif;
 	margin-left: 1rem;
+	margin-right: 1rem;
 	margin-top: 1rem;
+	background-color: #fafafa;
 }
 
 a {
@@ -13,27 +15,88 @@ a {
 	color: black;
 }
 
+a:hover {
+	cursor: pointer;
+}
+
 .header {
 	font-size: 1.3rem;
 }
 
-.underline {
-	text-decoration: underline;
-	font-style: italic;
+.archive,
+.work {
+	cursor: pointer;
 }
 
-.list, .about {
+.archive:hover,
+.work:hover {
+	text-decoration: underline;
+}
+
+.underline {
+/*	font-style: italic;*/
+	text-decoration: underline;
+/*	text-shadow: 0 0 10px #fc83be,
+		0 0 10px #fc83be;*/
+}
+
+.about {
+	display: block;
 	margin-top: 4rem;
+	font-size: 1.15rem;
+}
+
+.abouttext {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.aboutme {
+	grid-column-start: span 2;
+}
+
+.contact a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+.categories {
+	margin-top: 6rem;
+	display: flex;
+	font-size: 1.15rem;
+	justify-content: space-between;
+}
+
+.buttons, .listjpg {
+	display: flex;
+}
+
+.allbutton:hover, 
+.printbutton:hover,
+.posterbutton:hover,
+.codebutton:hover,
+.motionbutton:hover,
+.listbutton:hover,
+.gridbutton:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.list {
+	margin-top: 2rem;
 }
 
 .line {
-	border-top: 1px solid black;
+	border: 0.7px solid black;
 }
 
-.works {
+.works, .labels {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	margin-top: 0.5rem;
 	font-size: 1.15rem;
 }
 
@@ -42,6 +105,25 @@ a {
 	justify-content: flex-end;
 }
 
-img {
+.list img {
 	width: 15rem;
+}
+
+.footer {
+	margin-top: 2.5rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	font-size: 0.8rem;
+}
+
+.hoverpics {
+	position: fixed;
+ 	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1000;
+}
+
+.hoverpics img {
+	opacity: 35%;
 }
