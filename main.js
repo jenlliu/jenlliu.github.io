@@ -28,6 +28,28 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+    $('.gridbutton').click(function(){
+        $('.labels, .name, .medium, .year, .line, .hoverpics').addClass('hidden');
+        $('#lb, #yellowivy, #numbers, #slow, #homes, #closet, #heartrot').addClass('listitem');
+        $('.list').addClass('list2');
+        $('.works').addClass('works2');
+        $('.works2').removeClass('works');
+        $('.listbutton').removeClass('underline');
+        $('.gridbutton').addClass('underline');
+    });
+
+    $('.listbutton').click(function(){
+        $('.labels, .name, .medium, .year, .line, .hoverpics').removeClass('hidden');
+        $('#lb, #yellowivy, #numbers, #slow, #homes, #closet, #heartrot').removeClass('listitem');
+        $('.list').removeClass('list2');
+        $('.works2').addClass('works');
+        $('.works2').removeClass('works2');
+        $('.listbutton').addClass('underline');
+        $('.gridbutton').removeClass('underline');
+    });
+});
+
+$(document).ready(function() {
     function toggleHoverWithClass(trigger, targetClass) {
         $(trigger).hover(
             function() {

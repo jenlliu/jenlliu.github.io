@@ -33,13 +33,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-.underline {
-/*	font-style: italic;*/
-	text-decoration: underline;
-/*	text-shadow: 0 0 10px #fc83be,
-		0 0 10px #fc83be;*/
-}
-
 .about {
 	display: block;
 	margin-top: 4rem;
@@ -58,10 +51,6 @@ a:hover {
 .contact a:hover {
 	text-decoration: underline;
 	cursor: pointer;
-}
-
-.hidden {
-	display: none;
 }
 
 .categories {
@@ -100,13 +89,35 @@ a:hover {
 	font-size: 1.15rem;
 }
 
-.image {
-	display: flex;
-	justify-content: flex-end;
+.labels {
+	font-style: italic;
+}
+
+.list2 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 5rem;
+	align-items:center;
+}
+.listitem{
+	display:flex;
+}
+
+.list2 .listitem:nth-child(3n+1){
+	margin-right:0px;
+	justify-content:flex-end;
 }
 
 .list img {
 	width: 15rem;
+}
+
+.list2 img {
+	width: 30rem;
+}
+
+.works2 {
+	display: block;
 }
 
 .footer {
@@ -126,4 +137,12 @@ a:hover {
 
 .hoverpics img {
 	opacity: 35%;
+}
+
+.hidden {
+	display: none;
+}
+
+.underline {
+	text-decoration: underline;
 }
