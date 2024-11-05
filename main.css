@@ -97,7 +97,7 @@ a:hover {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	align-items:center;
-	row-gap: 0.5rem;
+	row-gap: 3rem;
 }
 
 .listitem{
@@ -119,7 +119,7 @@ a:hover {
 }
 
 .list2 img {
-	width: 35rem;
+	width: 30vw;
 }
 
 .works2 {
