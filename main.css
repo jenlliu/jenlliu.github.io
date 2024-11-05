@@ -112,6 +112,11 @@ a:hover {
 	display:flex;
 }
 
+.image {
+	display: flex;
+	justify-content: flex-end;
+}
+
 /*.list2 .listitem:nth-child(3n){
 	margin-right:0px;
 	justify-content:center;
