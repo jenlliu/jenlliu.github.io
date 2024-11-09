@@ -1,0 +1,56 @@
+::root{
+	font-size:25px;
+}
+
+body {
+	font-family: Helvetica, sans-serif;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	margin-top: 1rem;
+	background-color: #fafafa;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.header {
+	font-size: 1.3rem;
+}
+
+.main {
+	margin-top: 4rem;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 3rem;
+}
+
+.images {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-left: auto;
+	height: 77vh;
+	overflow: scroll;
+	row-gap: 1rem;
+}
+
+.images img {
+	width: 60rem;
+}
+
+.text {
+	font-size: 1.15rem;
+}
+
+.footer {
+	margin-top: 2.5rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	font-size: 0.8rem;
+}
