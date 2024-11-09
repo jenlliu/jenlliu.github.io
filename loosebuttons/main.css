@@ -40,6 +40,10 @@ a:hover {
 	row-gap: 1rem;
 }
 
+.underline{
+	text-decoration: underline;
+}
+
 .images img {
 	width: 60rem;
 }
