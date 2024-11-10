@@ -185,3 +185,30 @@ a:hover {
 .underline {
 	text-decoration: underline;
 }
+
+@media only screen and (max-width: 600px){
+  .abouttext{
+  	display: flex;
+  	flex-direction: column;
+  	row-gap: 2rem;
+  }
+
+  .works {
+  	grid-template-columns: repeat(2, 1fr);
+  	font-size: 1rem;
+  }
+
+  .labels, .medium, .year{
+  	display: none;
+  }
+
+  .list2 {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  }
+
+  .list2 img{
+  	width: 20rem;
+  }
+}

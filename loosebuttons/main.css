@@ -60,3 +60,16 @@ a:hover {
 	text-align: center;
 	font-size: 0.8rem;
 }
+
+@media only screen and (max-width: 600px){
+  .text {
+  	display: flex;
+  	flex-direction: column;
+  	gap: 2rem;
+  }
+
+  .images img,
+  .images video{
+  	width: 23rem;
+  }
+}
