@@ -212,11 +212,7 @@ a:hover {
   	width: 20rem;
   }
 
-	.allbutton, 
-	.printbutton,
-	.posterbutton,
-	.codebutton,
-	.motionbutton {
+	.buttons{
 		display: none;
 	}
 }
