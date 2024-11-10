@@ -211,4 +211,12 @@ a:hover {
   .list2 img{
   	width: 20rem;
   }
+
+	.allbutton, 
+	.printbutton,
+	.posterbutton,
+	.codebutton,
+	.motionbutton {
+		display: none;
+	}
 }
