@@ -22,34 +22,36 @@ a:hover {
 
 .header {
 	font-size: 1.3rem;
+	position: sticky;
+	top: 1rem;
 }
 
 .main {
+	font-size: 1.15rem;	
 	margin-top: 4rem;
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	gap: 3rem;
 }
 
-.images {
+.text {
 	display: grid;
-	grid-template-columns: 1fr;
-	margin-left: auto;
-	height: 77vh;
-	overflow: scroll;
+	grid-template-columns: 1fr 1fr;
+	gap: 30rem;
+}
+
+
+.images {
+	margin-top: 4rem;
+	display: flex;
+	flex-direction: column;
 	row-gap: 1rem;
+	align-items: center;
+}
+
+.images img {
+	width: 50rem;
 }
 
 .underline{
 	text-decoration: underline;
-}
-
-.images img {
-	width: 60rem;
-}
-
-.text {
-	font-size: 1.15rem;
 }
 
 .footer {
