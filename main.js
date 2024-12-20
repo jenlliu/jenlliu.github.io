@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('.printbutton').click(function() {
-        $('#lb, #yellowivy, #numbers, #analise, #9th, #homes, #closet').removeClass('hidden');
+        $('#beltbook, #knit, #lb, #yellowivy, #numbers, #analise, #9th, #homes, #closet').removeClass('hidden');
         $('#heartrot, #slow').addClass('hidden');
         $('.allbutton, .codebutton, .motionbutton').removeClass('underline');
         $('.printbutton').addClass('underline');
@@ -8,20 +8,20 @@ $(document).ready(function() {
 
     $('.codebutton').click(function() {
         $('#lb, #numbers').removeClass('hidden');
-        $('#slow, #yellowivy, #analise, #9th, #homes, #closet, #heartrot').addClass('hidden');
+        $('#beltbook, #knit, #slow, #yellowivy, #analise, #9th, #homes, #closet, #heartrot').addClass('hidden');
         $('.allbutton, .printbutton, .motionbutton').removeClass('underline');
         $('.codebutton').addClass('underline');
     });
 
     $('.allbutton').click(function() {
-        $('#slow, #lb, #yellowivy, #numbers, #analise, #9th, #homes, #closet, #heartrot').removeClass('hidden');
+        $('#beltbook, #knit, #slow, #lb, #yellowivy, #numbers, #analise, #9th, #homes, #closet, #heartrot').removeClass('hidden');
         $('.codebutton, .printbutton, .motionbutton').removeClass('underline');
         $('.allbutton').addClass('underline');
     });
 
     $('.motionbutton').click(function() {
-        $('#lb, #yellowivy, #numbers, #analise, #9th, #homes, #closet').addClass('hidden');
-        $('#heartrot, #slow').removeClass('hidden');
+        $('#beltbook, #lb, #yellowivy, #numbers, #analise, #9th, #homes, #closet').addClass('hidden');
+        $('#knit, #heartrot, #slow').removeClass('hidden');
         $('.allbutton, .printbutton, .codebutton').removeClass('underline');
         $('.motionbutton').addClass('underline');
     });
@@ -30,7 +30,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('.gridbutton').click(function(){
         $('.labels, .name, .medium, .year, .line, .hoverpics').addClass('hidden');
-        $('#lb, #yellowivy, #numbers, #slow, #homes, #closet, #heartrot').addClass('listitem');
+        $('#beltbook, #knit, #lb, #yellowivy, #numbers, #slow, #homes, #closet, #heartrot').addClass('listitem');
         $('.list').addClass('list2');
         $('.works').addClass('works2');
         $('.works2').removeClass('works');
@@ -40,7 +40,7 @@ $(document).ready(function() {
 
     $('.listbutton').click(function(){
         $('.labels, .name, .medium, .year, .line, .hoverpics').removeClass('hidden');
-        $('#lb, #yellowivy, #numbers, #slow, #homes, #closet, #heartrot').removeClass('listitem');
+        $('#beltbook, #knit, #lb, #yellowivy, #numbers, #slow, #homes, #closet, #heartrot').removeClass('listitem');
         $('.list').removeClass('list2');
         $('.works2').addClass('works');
         $('.works2').removeClass('works2');
@@ -75,6 +75,8 @@ $(document).ready(function() {
         );
     }
 
+    toggleHoverWithClass('#beltbook', '#belthover');
+    toggleHoverWithClass('#knit', '#knithover');
     toggleHoverWithClass('#lb', '#lbhover');
     toggleHoverWithClass('#yellowivy', '#yellowivyhover');
     toggleHoverWithClass('#numbers', '#numbershover');
