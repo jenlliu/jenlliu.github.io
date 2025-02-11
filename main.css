@@ -27,6 +27,13 @@ a:hover {
 	font-size: 1.3rem;
 }
 
+.bigtext {
+	line-height: 0.95;
+	margin-top: 4rem;
+	font-size: 8rem;
+	text-align: center;
+}
+
 .archive,
 .work {
 	cursor: pointer;
@@ -39,7 +46,7 @@ a:hover {
 
 .about {
 	display: block;
-	margin-top: 4rem;
+	margin-top: 5rem;
 	font-size: 1.15rem;
 }
 
@@ -50,6 +57,7 @@ a:hover {
 
 .aboutme {
 	grid-column-start: span 2;
+	margin-right: 1rem;
 }
 
 .contact a:hover {
