@@ -1,88 +1,30 @@
-$(document).ready(function() {
-    $('.printbutton').click(function() {
-        $('#beltbook, #knit, #lb, #yellowivy, #numbers, #analise, #9th, #homes, #closet').removeClass('hidden');
-        $('#heartrot, #slow').addClass('hidden');
-        $('.allbutton, .codebutton, .motionbutton').removeClass('underline');
-        $('.printbutton').addClass('underline');
-    });
 
-    $('.codebutton').click(function() {
-        $('#lb, #numbers').removeClass('hidden');
-        $('#beltbook, #knit, #slow, #yellowivy, #analise, #9th, #homes, #closet, #heartrot').addClass('hidden');
-        $('.allbutton, .printbutton, .motionbutton').removeClass('underline');
-        $('.codebutton').addClass('underline');
-    });
+$(document).ready(function () {
+    let images = [
+        { src: "imgs/housenumbers.png", title: "Where Numbers Rest, 2024", fraction: "1/4" },
+        { src: "imgs/belt.gif", title: "On Belt Buckles, 2024", fraction: "2/4" },
+        { src: "imgs/knitfullscan.png", title: "Born to be Somebody, 2024", fraction: "3/4" },
+        { src: "imgs/home.png", title: "Found Homes, 2024", fraction: "4/4" }
+    ];
 
-    $('.allbutton').click(function() {
-        $('#beltbook, #knit, #slow, #lb, #yellowivy, #numbers, #analise, #9th, #homes, #closet, #heartrot').removeClass('hidden');
-        $('.codebutton, .printbutton, .motionbutton').removeClass('underline');
-        $('.allbutton').addClass('underline');
-    });
+    let index = 0;
 
-    $('.motionbutton').click(function() {
-        $('#beltbook, #lb, #yellowivy, #numbers, #analise, #9th, #homes, #closet').addClass('hidden');
-        $('#knit, #heartrot, #slow').removeClass('hidden');
-        $('.allbutton, .printbutton, .codebutton').removeClass('underline');
-        $('.motionbutton').addClass('underline');
-    });
-});
+    $(".selectedworks").html(`<img src="${images[0].src}" class="active" alt="${images[0].title}">`);
+    $(".caption").html(`
+        <span class="title">${images[0].title}</span>
+        <span class="fraction">${images[0].fraction}</span>
+    `);
 
-$(document).ready(function() {
-    $('.gridbutton').click(function(){
-        $('.labels, .name, .medium, .year, .line, .hoverpics').addClass('hidden');
-        $('#beltbook, #knit, #lb, #yellowivy, #numbers, #slow, #homes, #closet, #heartrot').addClass('listitem');
-        $('.list').addClass('list2');
-        $('.works').addClass('works2');
-        $('.works2').removeClass('works');
-        $('.listbutton').removeClass('underline');
-        $('.gridbutton').addClass('underline');
-    });
+    $(".selectedworks").click(function () {
+        index = (index + 1) % images.length;
 
-    $('.listbutton').click(function(){
-        $('.labels, .name, .medium, .year, .line, .hoverpics').removeClass('hidden');
-        $('#beltbook, #knit, #lb, #yellowivy, #numbers, #slow, #homes, #closet, #heartrot').removeClass('listitem');
-        $('.list').removeClass('list2');
-        $('.works2').addClass('works');
-        $('.works2').removeClass('works2');
-        $('.listbutton').addClass('underline');
-        $('.gridbutton').removeClass('underline');
-    });
+        $(".selectedworks img").attr("src", images[index].src).attr("alt", images[index].title);
 
-    $('.archive').click(function(){
-        $('.list, .list2, .categories, .about').addClass('hidden');
-        $('.archivepics').removeClass('hidden');
-        $('.archive').addClass('underline');
-        $('.work').removeClass('underline');
-    });
-
-    $('.work').click(function(){
-        $('.list, .list2, .categories, .about').removeClass('hidden');
-        $('.archivepics').addClass('hidden');
-        $('.work').addClass('underline');
-        $('.archive').removeClass('underline');
+        $(".caption").html(`
+            <span class="title">${images[index].title}</span>
+            <span class="fraction">${images[index].fraction}</span>
+        `);
     });
 });
 
-$(document).ready(function() {
-    function toggleHoverWithClass(trigger, targetClass) {
-        $(trigger).hover(
-            function() {
-                $(targetClass).removeClass('hidden');
-            },
-            function() {
-                $(targetClass).addClass('hidden');
-            }
-        );
-    }
-
-    toggleHoverWithClass('#beltbook', '#belthover');
-    toggleHoverWithClass('#knit', '#knithover');
-    toggleHoverWithClass('#lb', '#lbhover');
-    toggleHoverWithClass('#yellowivy', '#yellowivyhover');
-    toggleHoverWithClass('#numbers', '#numbershover');
-    toggleHoverWithClass('#slow', '#slowhover');
-    toggleHoverWithClass('#homes', '#homeshover');
-    toggleHoverWithClass('#closet', '#closethover');
-    toggleHoverWithClass('#heartrot', '#heartrothover');
-});
 

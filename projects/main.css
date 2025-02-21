@@ -1,0 +1,99 @@
+::root{
+	font-size:25px;
+}
+
+body {
+	font-family: Helvetica, sans-serif;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin-top: 3rem;
+    font-size: 1.4rem;
+	/* background-color: 	#416181; */
+}
+
+.hidden {
+    display: none;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.header {
+    width: fit-content;
+}
+
+.homepage:hover {
+	text-decoration: underline;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	cursor: pointer;
+    text-decoration: underline;
+}
+
+.index,
+.selected {
+	cursor: pointer;
+}
+
+.index:hover,
+.selected:hover {
+	text-decoration: underline;
+}
+
+.about {
+    margin-top: 2rem;
+}
+
+.contact {
+    margin-top: 2rem;
+}
+
+.list {
+    margin-top: 10rem;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.works {
+    margin-bottom: 0.5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.yearfilter {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* font-weight: lighter; */
+}
+
+.yeartitle {
+    grid-column-start: 2;
+}
+
+.year {
+    text-align: right;
+}
+
+.works:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hoverpics {
+    width: 13rem;
+}
+
+.footer {
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
