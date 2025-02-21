@@ -88,3 +88,30 @@ a:hover {
 .selected:hover {
 	text-decoration: underline;
 }
+
+@media only screen and (max-width: 900px){
+    .selectedworks {
+        min-width: 35rem;
+    }
+
+    .caption {
+        flex-direction: column;
+        margin-left: 3rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    body {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+    }
+
+    .selectedworks {
+        min-width: 23rem;
+    }
+
+    .caption {
+        margin-left: 2rem;
+    }
+}
