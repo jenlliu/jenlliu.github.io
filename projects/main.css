@@ -55,6 +55,10 @@ a:hover {
     margin-top: 2rem;
 }
 
+.contact a {
+    text-decoration: underline;
+}
+
 .list {
     margin-top: 10rem;
     width: 60vw;
