@@ -1,5 +1,5 @@
-::root{
-	font-size:25px;
+:root{
+	font-size:16px;
 }
 
 body {
@@ -69,4 +69,39 @@ a:hover {
 
 .titletext {
     margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 900px){
+    :root{
+        font-size:15px;
+    }
+
+    .align {
+       flex-grow: 0; 
+       display: block;
+    }
+
+    .text {
+        width: 40rem;
+        margin-left: 3rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .text {
+        width: 22rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+
+    .homepage {
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+
+    .images img {
+        max-width: 30rem;
+        max-height: 30rem;
+    }
+
 }

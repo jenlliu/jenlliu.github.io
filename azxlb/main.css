@@ -90,9 +90,18 @@ a:hover {
 @media only screen and (max-width: 600px){
     .text {
         width: 22rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+
+    .homepage {
+        margin-left: 2rem;
+        margin-top: 2rem;
     }
 
     .images img {
-        width: 30rem;
+        max-width: 30rem;
+        max-height: 30rem;
     }
+
 }
