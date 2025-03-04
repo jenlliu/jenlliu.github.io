@@ -44,6 +44,7 @@ a:hover {
     gap: 15rem;
     z-index: 10000;
     margin-bottom: 3rem;
+    overflow-x: hidden;
 }
 
 .images::-webkit-scrollbar {
