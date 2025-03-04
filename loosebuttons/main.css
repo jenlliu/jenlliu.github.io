@@ -92,6 +92,7 @@ a:hover {
 
     .images {
         gap: 5rem;
+        margin-top: 35rem;
     }
 }
 
@@ -115,6 +116,7 @@ a:hover {
     .images {
         margin-left: 2rem;
         gap: 5rem;
+        margin-top: 35rem;
     }
 
 }
