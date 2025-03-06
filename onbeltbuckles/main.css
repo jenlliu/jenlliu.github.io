@@ -33,17 +33,17 @@ a:hover {
 
 .images {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: baseline;
-    overflow-x: scroll;
     scroll-behavior: smooth;
-    gap: 1rem;
-    margin-bottom: 0.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: calc(100vw - 1rem);
-    height: fit-content;
-    margin-top: 8rem;
+    margin-left: 3rem;
+    width: fit-content;
+    margin-top: 30rem;
+    gap: 15rem;
+    z-index: 10000;
+    margin-bottom: 3rem;
+    overflow-x: hidden;
 }
 
 .images::-webkit-scrollbar {
@@ -52,34 +52,47 @@ a:hover {
 
 .images img {
     width: auto;
+    max-width: 60rem;
     height: auto;
+    max-height: 50rem;
 }
 
 .align {
-    display: flex;
-    flex-grow: 1;
+    position: fixed;
 }
 
 .text {
     width: 45rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
 }
 
 .titletext {
     margin-bottom: 2rem;
 }
 
+#four {
+    width: 50rem;
+}
+
+#six {
+    width: 40rem;
+}
+
 @media only screen and (max-width: 900px){
-    .align {
-       flex-grow: 0; 
-       display: block;
+    .text {
+        width: 35rem;
+        margin-left: 3rem;
     }
 
-    .text {
-        width: 40rem;
-        margin-left: 3rem;
+    .images img {
+        max-width: 32rem;
+        max-height: 32rem;
+    }
+
+    .images {
+        gap: 5rem;
+        margin-top: 35rem;
     }
 }
 
@@ -96,8 +109,14 @@ a:hover {
     }
 
     .images img {
-        max-width: 30rem;
-        max-height: 30rem;
+        max-width: 20rem;
+        max-height: 20rem;
+    }
+
+    .images {
+        margin-left: 2rem;
+        gap: 5rem;
+        margin-top: 35rem;
     }
 
 }

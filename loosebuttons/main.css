@@ -38,8 +38,6 @@ a:hover {
     align-items: baseline;
     scroll-behavior: smooth;
     margin-left: 3rem;
-    width: calc(-1rem + 100vw);
-    height: fit-content;
     margin-top: 30rem;
     gap: 15rem;
     z-index: 10000;
