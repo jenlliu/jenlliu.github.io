@@ -155,17 +155,4 @@ a {
         width: 100vw;
         padding: 1rem 2rem 2rem;
     }
-
-    .selectedworks{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .selectedworks img,
-    .selectedworks video {
-        max-width: 25rem;
-        height: auto;
-    }
 }
