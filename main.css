@@ -43,6 +43,7 @@ a {
     right: 0;
     padding: 1rem 3rem 3rem;
     box-sizing: border-box;
+    z-index: 1000000;
 }
 
 .close {
@@ -129,4 +130,35 @@ a {
 
 .white {
     color: white;
+}
+
+@media only screen and (max-width: 1450px){
+    .indexpopup {
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .indexpopup {
+        width: 65vw;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .indexpopup {
+        width: 100vw;
+    }
+
+    .selectedworks{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .selectedworks img,
+    .selectedworks video {
+        max-width: 30rem;
+        height: auto;
+    }
 }

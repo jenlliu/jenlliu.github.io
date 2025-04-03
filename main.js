@@ -56,10 +56,12 @@ function updateContent() {
         <span class="title">${currentItem.title}</span>
     `);
 
-    if (currentItem.textcolor.includes("white")) {
-        $(".homepagelink, .caption a, .info").addClass('white');
-    } else {
-        $(".homepagelink, .caption a, .info").removeClass('white');
+    if (window.matchMedia("(min-width: 751px)").matches) {
+        if (currentItem.textcolor.includes("white")) {
+            $(".homepagelink, .caption a, .info").addClass('white');
+        } else {
+            $(".homepagelink, .caption a, .info").removeClass('white');
+        }
     }
 }
 
