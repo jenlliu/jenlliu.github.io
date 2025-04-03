@@ -10,10 +10,6 @@ body {
     font-size: 1.4rem;
 }
 
-.overflowhidden {
-    overflow: hidden;
-}
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -149,14 +145,11 @@ a {
 }
 
 @media only screen and (max-width: 750px){
-    body {
-        margin-left: 2rem;
-        margin-right: 2rem;
-        margin-top: 2rem;  
+    :root{
+        font-size:14px;
     }
     
     .indexpopup {
         width: 100vw;
-        padding: 1rem 2rem 2rem;
     }
 }
