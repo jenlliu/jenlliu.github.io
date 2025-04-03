@@ -1,11 +1,13 @@
 $(document).ready(function(){
     $('.index').click(function (){
         $('.indexpopup').removeClass('hidden');
+        $('body').removeClass('overflowhidden');
 
     })
 
     $('.close').click(function (){
         $('.indexpopup').addClass('hidden');
+        $('body').addClass('overflowhidden');
     })
 })
 

@@ -10,6 +10,10 @@ body {
     font-size: 1.4rem;
 }
 
+.overflowhidden {
+    overflow: hidden;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
