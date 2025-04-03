@@ -158,7 +158,7 @@ a {
 
     .selectedworks img,
     .selectedworks video {
-        max-width: 30rem;
+        max-width: 25rem;
         height: auto;
     }
 }

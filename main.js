@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 let images = [
     { 
-        src: "<video width='100%' height='auto' autoplay loop muted><source src='imgs/borntobe.mp4' type='video/mp4'>Your browser does not support the video tag.</video>", 
+        src: "<video width='100%' height='auto' autoplay playsinline loop muted><source src='imgs/borntobe.mp4' type='video/mp4'>Your browser does not support the video tag.</video>", 
         title: "<a href=\"https://jenlliu.com/borntobe/\">Born to be Somebody, 2024</a>",
         textcolor: "black"
     },
