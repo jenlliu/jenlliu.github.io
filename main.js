@@ -17,6 +17,11 @@ let images = [
         textcolor: "black"
     },
     { 
+        src: "<video width='100%' height='auto' autoplay playsinline loop muted><source src='imgs/vwm.mp4' type='video/mp4'>Your browser does not support the video tag.</video>", 
+        title: "<a href=\"https://jenlliu.com/vwm/\">Vietnamese Women's Museum, 2025</a>",
+        textcolor: "white"
+    },
+    { 
         src: "imgs/numbers.webp", 
         srcSmall: "imgs/numbers2.webp",
         title: "<a href=\"https://jenlliu.com/wherenumbers/\">Where Numbers Rest, 2024</a>",
@@ -67,9 +72,11 @@ function updateContent() {
     `);
 
     if (currentItem.textcolor === "white") {
-        $(".homepagelink, .caption a, .info").addClass('white');
+        $(".homepagelink, .caption a, .index").addClass('white');
+        $(".homepagelink, .caption a, .index").removeClass('black');
     } else {
-        $(".homepagelink, .caption a, .info").removeClass('white');
+        $(".homepagelink, .caption a, .index").removeClass('white');
+        $(".homepagelink, .caption a, .index").addClass('black');
     }
 }
 
@@ -81,4 +88,3 @@ $(".selectedworks").click(function () {
     index = (index + 1) % images.length;
     updateContent(); 
 });
-
