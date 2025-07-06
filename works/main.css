@@ -124,15 +124,21 @@ video {
 
 @media only screen and (max-width: 1100px){
     body {
-        display: block;
+        display: flex;
+        flex-direction: column;
         overflow: auto;
         margin-left: 1.5rem;
 	    margin-right: 1.5rem;
 	    margin-top: 1.5rem; 
     }
 
-    .indextext {
+    .list {
         display: none;
+    }
+
+    .indextext {
+        order: 1;
+        margin-bottom: 3rem;
     }
 
     .header {
@@ -140,6 +146,7 @@ video {
     }
 
     .previews {
+        order: 2;
         overflow: visible;
         max-height: none;
         padding: 0;
